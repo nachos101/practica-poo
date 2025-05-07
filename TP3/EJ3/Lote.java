@@ -24,10 +24,6 @@ public class Lote {
         return copia;
     }
 
-    public boolean contieneMineralEspecial(String S){
-        return minerales.contains(S);
-    }
-
     public String getName() {
         return name;
     }
@@ -46,6 +42,10 @@ public class Lote {
 
     public boolean puedeSembrarse(Cereal C){
         return minerales.contains(C.getNombre());
+    }
+
+    public boolean isEspecial(ArrayList<String> especiales){
+        return minerales.contains(especiales);
     }
 
     @Override
