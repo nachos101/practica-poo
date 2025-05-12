@@ -44,8 +44,8 @@ public class Lote {
         return minerales.contains(C.getNombre());
     }
 
-    public boolean isEspecial(ArrayList<String> especiales){
-        return minerales.contains(especiales);
+    public boolean isEspecial(String M){
+        return minerales.contains(M);
     }
 
     @Override

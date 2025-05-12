@@ -1,6 +1,5 @@
 package TP3.EJ3;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Sistema {
@@ -17,15 +16,12 @@ public class Sistema {
     }
 
     public boolean defineLote(Lote L){
-        boolean valorVerdad = false;
-        ArrayList<String> copia = new ArrayList<String>();
-        copia = mineralesEspeciales;
-        for(Lote lote : listaLotes){
-            if (lote.equals(L)){
-                valorVerdad = lote.isEspecial(copia); //Si devuelve TRUE es especial sino común
+        for(String m : mineralesEspeciales){
+            if (!L.isEspecial(m)){
+                return false;
              }
         }
-        return valorVerdad;
+        return true;
     }
 
     public void satisfaceLote(Lote L){
