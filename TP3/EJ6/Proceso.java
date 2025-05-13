@@ -8,4 +8,20 @@ public class Proceso {
         Nombre = nombre;
         Memoria = memoria;
     }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String nombre) {
+        Nombre = nombre;
+    }
+
+    public int getMemoria() {
+        return Memoria;
+    }
+
+    public void setMemoria(int memoria) {
+        Memoria = memoria;
+    }
 }

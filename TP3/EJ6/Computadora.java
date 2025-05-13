@@ -4,14 +4,29 @@ import java.util.ArrayList;
 
 public class Computadora {
     private double velocidad;
-    private ArrayList<Proceso> listaProcesos;
-    private int memoriaMaxima;
+    private Proceso pp;
 
-    public Computadora(double velocidad, int memoriaMaxima) {
+    public Computadora(double velocidad) {
         this.velocidad = velocidad;
-        this.listaProcesos = new ArrayList<Proceso>();
-        this.memoriaMaxima = memoriaMaxima;
     }
 
+    public void setVelocidad(double velocidad) {
+        this.velocidad = velocidad;
+    }
 
+    public Proceso getPp() {
+        return pp;
+    }
+
+    public void setPp(Proceso pp) {
+        this.pp = pp;
+    }
+
+    public boolean estaDisponible(){
+        return (this.pp!=null);
+    }
+
+    public double getVelocidad() {
+        return velocidad;
+    }
 }
