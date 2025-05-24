@@ -11,7 +11,7 @@ public class comboEnvio extends elementoEnvio {
     }
 
     public void addElemento(elementoEnvio E){
-        E.setNroTracking(this.nroTracking);
+        E.setNroTracking(this.getNroTracking());
         if (this.getCiudadDestino().equals(E.getCiudadDestino())){
             listaCombos.add(E);
         }
