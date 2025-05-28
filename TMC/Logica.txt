@@ -1,0 +1,60 @@
+TMC
+#UNIDAD 1 Lógica
+
+La lógica estudia la forma del razonamiento, es una disciplina que por
+medio de reglas y técnicas determina si un teorema es falso o verdadero,
+ademas de que es ampliamente aplicada en filosofía, matemáticas,computación y física.
+
+En general la lógica se aplica en el trabajo cotidiano, por ejemplo para ir
+de compras al supermercado se tiene que realizar cierto procedimiento
+lógico que permite realizar dicha tarea, si quiero pintar una pared también
+tengo que utilizar la aplicación de la lógica.
+
+-PROPOSICIONES
+Una proposición es una oración, frase o expresión matemática que puede
+ser falsa o verdadera, pero no ambas a la vez.
+
+Ejemplos de proposiciones válidas y no válidas:
+	p: Estados Unidos es el país mas extenso del continente americano
+	q: -19+50=31
+	r: x>(y-13)7
+	s: Carlos Salinas fue presidente de España
+	t: River será campeon del torneo de fútbol
+	u: ¿Cómo estás?
+	v: Formatea el disco antes de usarlo
+	-------------------------------------
+	Las proposiciones p,q y s, tienen un valor verdadero o falso, entonces son proposiciones válidas.
+	r tambien es valida pero depende del valor asignado a las variables x e y.
+	t esta perfectamente expresada pero para determinar si es V o F habria que esperar que termine el torneo.
+	u y v no son válidas ya que no se puede determinar un nivel de valor.
+	
+-PROPOSICIONES COMPUESTAS
+	Existen conectores u operadores lógicos que permiten formar proposiciones "compuestas".
+	Se dice que una proposición es compuesta cuando está integrada por dos o mas proposiciones simples
+	conectadas por medio de operadores lógicos.
+	
+	-OPERADORES-
+		*Operador AND (y)
+			Conecta dos proposiciones que se deben cumplir para que se obtenga un resultado verdadero.
+			Su simbolo es ^.
+			Ejemplo:
+				"El auto arranca si y sólo si el tanque tiene gasolina y la batería tiene corriente."
+				p: El auto arranca.
+				q: El tanque tiene gasolina.
+				r: La batería tiene corriente.
+				Usando simbología lógica nos quedaria asi: p<>q^r
+				y su tabla de verdad seria la siguiente:
+						q	|	r	| q^r
+						1	|	1	| 1
+						1	|	0	| 0
+						0	|	1	| 0
+						0	|	0	| 0
+						1: verdadero 0: falso
+					En la tabla significa que si q=1 tiene gasolina y r=1 que la bateria tiene corriente
+					por lo tanto p<>q^r = 1 significa que el auto puede encender.
+					si q o r valen cero esto significa que el auto no tiene gasolina o la bateria no tiene corriente
+					entonces no enciende.
+					<> = Si y solo si
+					
+		*Operador OR (o)
+			
